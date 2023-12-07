@@ -1,0 +1,34 @@
+.services {
+  background-color: $green-box;
+
+  & .h2 {
+    padding-top: 16px;
+    margin-bottom: 45px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+
+    padding-bottom: 65px;
+  }
+}
+
+.inner__item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 9px;
+
+  & .h3 {
+    font-family: $font-main;
+    font-size: 27px;
+    font-weight: 900;
+  }
+
+  & .item__text {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 158px;
+  }
+}

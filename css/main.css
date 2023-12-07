@@ -1,0 +1,290 @@
+/* reset main */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Playfair+Display:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+ul,
+ul li {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #2f2e2e;
+  font-family: "Playfair Display";
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 70px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Custom */
+.m--link {
+  color: #2f2e2e;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.m--link:hover {
+  color: #000;
+  font-size: 700;
+}
+
+.m--text {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.4px;
+  color: #2f2e2e;
+}
+
+.no--scroll {
+  overflow-y: hidden;
+}
+
+.is--hiden {
+  display: none;
+}
+
+.for--mobile {
+  display: none;
+}
+
+.btn--reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.header .header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 90px;
+}
+
+.header__main-row {
+  position: relative;
+  background-image: url("/source/bcg-screen.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 739px;
+}
+
+.header__main-box {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 691px;
+  height: 550px;
+  padding: 138px 166px 138px 100px;
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+}
+.header__main-box .h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 51px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.header__main-box .main__text {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.services {
+  background-color: rgba(37, 77, 77, 0.2);
+}
+.services .h2 {
+  padding-top: 16px;
+  margin-bottom: 45px;
+}
+.services__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 65px;
+}
+
+.inner__item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 9px;
+}
+.inner__item-box .h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 900;
+}
+.inner__item-box .item__text {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 158px;
+}

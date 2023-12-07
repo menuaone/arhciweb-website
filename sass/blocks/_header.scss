@@ -1,0 +1,56 @@
+.header {
+  & .header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 0;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 90px;
+  }
+}
+
+.header__main-row {
+  position: relative;
+  background-image: url("/source/bcg-screen.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 739px;
+}
+
+.header__main-box {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 691px;
+  height: 550px;
+
+  padding: 138px 166px 138px 100px;
+  background: linear-gradient(
+    91deg,
+    rgba(244, 246, 245, 0.9) -7.89%,
+    rgba(255, 255, 255, 0.9) 132.55%
+  );
+
+  & .h1 {
+    font-family: $font-main;
+    font-size: 51px;
+    font-weight: 900;
+
+    margin-bottom: 10px;
+  }
+
+  & .main__text {
+    font-family: $font-accent;
+
+    font-size: 32px;
+    font-weight: 200;
+  }
+}
