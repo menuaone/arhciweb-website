@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>CV</title>
+    <title>ArchiWeb</title>
   </head>
   <body>
     <!-- header -->
@@ -20,20 +20,31 @@
           <!-- nav -->
           <nav class="nav">
             <ul class="nav__list">
-              <li><a href="" class="nav__link m--link">Home</a></li>
-              <li><a href="" class="nav__link m--link">Projects</a></li>
-              <li><a href="" class="nav__link m--link">About</a></li>
-              <li><a href="" class="nav__link m--link">Contact</a></li>
+              <li><a href="#main" class="nav__link m--link">Home</a></li>
+              <li>
+                <a href="#projects" class="nav__link m--link">Projects</a>
+              </li>
+              <li><a href="#about" class="nav__link m--link">About</a></li>
+              <li><a href="#footer" class="nav__link m--link">Contact</a></li>
             </ul>
           </nav>
 
           <div class="header__search-icon">
             <img src="source/search-icon.svg" alt="search" />
           </div>
+
+          <!-- button block -->
+
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn">
+              <div class="nav-icon"></div>
+            </button>
+          </div>
         </div>
       </div>
+
       <!-- screen -->
-      <div class="header__main-row">
+      <div class="header__main-row" id="main">
         <div class="header__main-box">
           <h1 class="h1">Best Solution For Your Home</h1>
           <p class="main__text m--text">
@@ -46,7 +57,7 @@
 
     <!-- services -->
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="h2">Our Services</h2>
         <div class="services__inner">
@@ -59,14 +70,14 @@
           </div>
           <div class="inner__item-box">
             <img src="source/interior-icon.svg" alt="" class="item__img" />
-            <h3 class="h3">Planning</h3>
+            <h3 class="h3">Interior</h3>
             <p class="item__text m--text">
               Our Services Line one Servive line two
             </p>
           </div>
           <div class="inner__item-box">
             <img src="source/exterior-icon.svg" alt="" class="item__img" />
-            <h3 class="h3">Planning</h3>
+            <h3 class="h3">Exterior</h3>
             <p class="item__text m--text">
               Our Services Line one Servive line two
             </p>
@@ -75,6 +86,190 @@
       </div>
     </section>
 
-    <!-- <script src="script/main.js"></script> -->
+    <!-- about us -->
+
+    <section class="aboutus " id="about">
+      <div class="container">
+        <div class="aboutus__inner">
+          <!-- left -->
+          <div class="about__inner-img">
+            <img src="source/about-img.png" alt="about" class="img__item" />
+          </div>
+
+          <!-- right -->
+          <div class="about__inner-text">
+            <h2 class="about__title h2">About Us</h2>
+            <p class="about__innner-subtext m-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
+            <a href="" class="btn__link m--link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our projects -->
+
+    <section class="projects " id="projects">
+      <div class="container">
+        <h2 class="projects__title h2">Our Projects</h2>
+        <div class="projects__inner">
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr-1.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr-2.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr-3.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr-4.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr-5.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+
+          <div class="projects__inner-item">
+            <div class="img-box">
+              <img src="source/pr6.png" alt="project" class="project__img" />
+            </div>
+            <p class="item__text m--text">
+              Our Services Line one Servive line two
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+
+    <section class="testimonial " id="testimonial">
+      <div class="container">
+        <h2 class="testimonial__title h2">Testimonial</h2>
+        <div class="testimonial__inner">
+          <!-- 1 -->
+          <div class="testimonial__inner-item">
+            <img
+              src="source/ppl-1.png"
+              alt="founder1"
+              class="testimonial-img"
+            />
+            <div class="inner__text">
+              <h3 class="h3">James Passaquindici Arcand</h3>
+              <p class="testimonial__subtext m-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="testimonial__inner-item">
+            <img src="source/pp-2.png" alt="founder2" class="testimonial-img" />
+            <div class="inner__text">
+              <h3 class="h3">Abram Schleifer</h3>
+              <p class="testimonial__subtext m-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer id="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- left -->
+          <div class="footer__left">
+            <a href="" class="footer__logo-link">
+              <img
+                src="source/ArchiWeb__white.svg"
+                alt="logo"
+                class="footer__logo-img"
+              />
+            </a>
+            <p class="footer__text">
+              Archiweb is an architectural consultant based in Berlin, Germany.
+              We provide solutions for your architecture and residential design
+            </p>
+            <div class="footer__icon-box">
+              <a href="#">
+                <img src="source/fb-i.svg" alt="facebook" class="icons" />
+              </a>
+              <a href="#">
+                <img src="source/twit-i.svg" alt="twitter" class="icons" />
+              </a>
+
+              <a href="#">
+                <img src="source/inst-i.svg" alt="instagram" class="icons" />
+              </a>
+            </div>
+          </div>
+          <!-- middle -->
+          <div class="footer__middle">
+            <h3 class="footer__title">Articles</h3>
+            <div class="footer__link-box">
+              <a href="#" class="footer__middle-link">
+                7 Tips for Kids Friendly Interior Design
+              </a>
+              <a href="#" class="footer__middle-link">
+                Smart Tips for Changing a Room
+              </a>
+              <a href="#" class="footer__middle-link"> Eco-friendly design </a>
+            </div>
+          </div>
+          <div class="footer__left">
+            <h3 class="footer__title">Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76100.9208860129!2d-3.071941300475884!3d53.41207591209771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adf8a647060b7%3A0x42dc046f3f176e01!2z0JvQuNCy0LXRgNC_0YPQu9GMLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sge!4v1702337666653!5m2!1sru!2sge"
+              width="295"
+              height="221"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- right -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

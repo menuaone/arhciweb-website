@@ -3,6 +3,7 @@
 
   & .h2 {
     padding-top: 16px;
+    text-align: center;
     margin-bottom: 45px;
   }
   &__inner {
@@ -10,6 +11,11 @@
     justify-content: space-around;
 
     padding-bottom: 65px;
+
+    @include mediaPhones {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
 

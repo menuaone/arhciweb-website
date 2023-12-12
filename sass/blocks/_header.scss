@@ -5,6 +5,10 @@
     align-items: center;
 
     padding: 50px 0;
+
+    @include mediaPhones {
+      padding: 25px 0;
+    }
   }
 }
 
@@ -13,14 +17,27 @@
     display: flex;
     gap: 90px;
   }
+
+  @include mediaSTablet {
+    display: none;
+  }
 }
 
+.header__search-icon {
+  @include mediaSTablet {
+    display: none;
+  }
+}
 .header__main-row {
   position: relative;
   background-image: url("/source/bcg-screen.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 739px;
+
+  @include mediaPhones {
+    height: 100vh;
+  }
 }
 
 .header__main-box {
@@ -39,12 +56,26 @@
     rgba(255, 255, 255, 0.9) 132.55%
   );
 
+  @include mediaPhones {
+    top: 30%;
+    transform: translateY(0);
+
+    width: 330px;
+    height: 250px;
+
+    padding: 46px 55px 46px 33px;
+  }
+
   & .h1 {
     font-family: $font-main;
     font-size: 51px;
     font-weight: 900;
 
     margin-bottom: 10px;
+
+    @include mediaPhones {
+      font-size: 20px;
+    }
   }
 
   & .main__text {
@@ -52,5 +83,61 @@
 
     font-size: 32px;
     font-weight: 200;
+
+    @include mediaPhones {
+      font-size: 14px;
+    }
+  }
+}
+
+.header__nav-btn {
+  display: none;
+
+  @include mediaSTablet {
+    display: block;
+  }
+}
+
+.header__top-row--mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 60px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  z-index: 9;
+
+  // отображение листа
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 20px;
+  }
+
+  // перемещение кнопки в верхний угол
+  .header__nav-btn {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+
+    @include mediaPhones {
+      top: 28px;
+      right: 10px;
+    }
   }
 }

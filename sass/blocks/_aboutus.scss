@@ -1,0 +1,67 @@
+.aboutus {
+  margin-top: 76px;
+
+  @include mediaPhones {
+    margin-top: 0px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mediaPhones {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+
+.img__item {
+  max-width: 735px;
+  height: 100%;
+
+  @include mediaTablet {
+    max-width: 400px;
+  }
+
+  @include mediaPhones {
+    max-width: 400px;
+  }
+}
+.about__inner-text {
+  text-align: left;
+
+  max-width: 456px;
+}
+.about__title {
+  text-align: left;
+  margin-bottom: 37px;
+
+  @include mediaTablet {
+    margin-bottom: 15px;
+  }
+}
+
+.about__innner-subtext {
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 26px;
+
+  @include mediaTablet {
+    font-size: 21px;
+  }
+}
+
+.btn__link {
+  font-family: $font-accent;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  @include mediaPhones {
+    font-size: 18px;
+  }
+}
