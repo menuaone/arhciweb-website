@@ -55,6 +55,7 @@
     rgba(244, 246, 245, 0.9) -7.89%,
     rgba(255, 255, 255, 0.9) 132.55%
   );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @include mediaPhones {
     top: 30%;
@@ -74,7 +75,7 @@
     margin-bottom: 10px;
 
     @include mediaPhones {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 

@@ -290,6 +290,8 @@ body {
   height: 550px;
   padding: 138px 166px 138px 100px;
   background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 @media screen and (max-width: 425px) {
   .header__main-box {
@@ -310,7 +312,7 @@ body {
 }
 @media screen and (max-width: 425px) {
   .header__main-box .h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .header__main-box .main__text {
